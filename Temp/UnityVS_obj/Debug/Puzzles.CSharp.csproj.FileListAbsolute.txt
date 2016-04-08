@@ -1,0 +1,13 @@
+C:\cst_238\Puzzles\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+C:\cst_238\Puzzles\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+C:\cst_238\Puzzles\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\cst_238\Puzzles\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\cst_238\Puzzles\Temp\UnityVS_bin\Debug\UnityEngine.Networking.dll
+C:\cst_238\Puzzles\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+C:\cst_238\Puzzles\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\cst_238\Puzzles\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+C:\cst_238\Puzzles\Temp\UnityVS_bin\Debug\UnityEngine.Networking.xml
+C:\cst_238\Puzzles\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\cst_238\Puzzles\Temp\UnityVS_obj\Debug\Puzzles.CSharp.csprojResolveAssemblyReference.cache
+C:\cst_238\Puzzles\Temp\UnityVS_obj\Debug\Assembly-CSharp.dll
+C:\cst_238\Puzzles\Temp\UnityVS_obj\Debug\Assembly-CSharp.pdb
