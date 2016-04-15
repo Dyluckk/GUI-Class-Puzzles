@@ -4,8 +4,10 @@ using UnityEngine.UI;
 
 public class TicTacToe : MonoBehaviour {
 
-   void OnMouseDown(){
+  // public GameObject cell;
+   public void changeText(){
         // this object was clicked - do something
+       // cell = GameObject.Find("Top1");
         gameObject.GetComponent<Text>().text = "X";
         
     }
