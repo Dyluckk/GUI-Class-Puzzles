@@ -66,6 +66,7 @@
     <Compile Include="Assets\Puzzle2 Assets\EightBallOnClickEvent.cs" />
     <Compile Include="Assets\Puzzle2 Assets\MagicEightBallMain.cs" />
     <Compile Include="Assets\TicTacToe.cs" />
+    <Compile Include="Assets\puzzle4\TwoSecondLight.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
