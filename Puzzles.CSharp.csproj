@@ -63,10 +63,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Puzzle2 Assets\EightBallOnClickEvent.cs" />
-    <Compile Include="Assets\Puzzle2 Assets\MagicEightBallMain.cs" />
-    <Compile Include="Assets\TicTacToe.cs" />
-    <Compile Include="Assets\puzzle4\TwoSecondLight.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 2\CameraGizmo.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 2\TicTacSpawner.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 2\TicTacToe.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 3\scripts\EightBallOnClickEvent.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 3\scripts\MagicEightBallMain.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 4\scripts\TwoSecondLight.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 5\scripts\IpodPlayer.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 5\scripts\IpodVol.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 5\scripts\MarqueeText.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 5\scripts\backButton.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 5\scripts\menuButton.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 5\scripts\nextButton.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 5\scripts\playButton.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 5\scripts\selectButton.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 6\scripts\DrawWithMouse.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 6\scripts\SnapChat.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
