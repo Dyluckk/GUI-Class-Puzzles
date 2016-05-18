@@ -9,8 +9,7 @@ public class SnapChat : MonoBehaviour
     string snapFileName = "snapchat";
     int _CaptureCounter = 0;
     WebCamTexture webcamTexture;
-
-    //private string _SavePath = Application.dataPath + "/snapchatSS/";
+    public Image captureRect;
 
     void Start()
     {
@@ -18,35 +17,25 @@ public class SnapChat : MonoBehaviour
         frontFacingCamera.texture = webcamTexture;
         frontFacingCamera.material.mainTexture = webcamTexture;
         webcamTexture.Play();
-
+                
         //load snapCounter
-        _CaptureCounter = PlayerPrefs.GetInt("_CaptureCounter");
-        Debug.Log(webcamTexture.width);
+        _CaptureCounter = PlayerPrefs.GetInt("_CaptureCounter");        
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            takeSnap();
-        }
+        
     }
-
+        
     public void takeSnap()
     {
-        Texture2D snap = new Texture2D(webcamTexture.width, webcamTexture.height);
-        snap.SetPixels(webcamTexture.GetPixels());
-        snap.Apply();
-
-        System.IO.File.WriteAllBytes(Application.dataPath + "/Scenes/Puzzle 6/savedSnaps/" + snapFileName + _CaptureCounter.ToString() + ".png", snap.EncodeToPNG());
+        Application.CaptureScreenshot(Application.dataPath + "/Scenes/Puzzle 6/savedSnaps/" + snapFileName + _CaptureCounter.ToString() + ".png");
         ++_CaptureCounter;
-
+        //save current state
         PlayerPrefs.SetInt("_CaptureCounter", _CaptureCounter);
         PlayerPrefs.Save();
-    }      
-     
+    }   
 
 }
 

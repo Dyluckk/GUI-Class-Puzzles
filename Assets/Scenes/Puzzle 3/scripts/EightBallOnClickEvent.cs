@@ -9,14 +9,21 @@ public class EightBallOnClickEvent : MonoBehaviour
     public Text Title;
     public Text Prompt;
     public Text Answer;
+    public Text Cont;
     public InputField Question;
+    string continueString = "Press space to ask another question...";
+    Vector3 oldPos;
 
     private float _timeLeft = 3;
-    bool eightBallDisplaying = false;
+    public bool eightBallDisplaying = false;
     bool answerDisplayed = false;
+
     void Start() {
         Debug.Log("started");
         eightBallAnswerSprite.GetComponent<SpriteRenderer>().enabled = false;
+        Cont.text = "";
+        //get original position
+        oldPos = new Vector3(eightBall.transform.position.x, eightBall.transform.position.y, eightBall.transform.position.z);
     }
 
     void Update()
@@ -35,6 +42,7 @@ public class EightBallOnClickEvent : MonoBehaviour
             Question.GetComponent<CanvasGroup>().alpha = 0;
             eightBall.GetComponent<SpriteRenderer>().enabled = false;
             eightBallAnswerSprite.GetComponent<SpriteRenderer>().enabled = true;
+            Cont.text = continueString;
 
             string response = "";
             int randomResponseChoice;
@@ -45,6 +53,7 @@ public class EightBallOnClickEvent : MonoBehaviour
             {
                 case 1:
                     response = "Yes, in due time.";
+                    
                     break;
 
                 case 2:
@@ -123,16 +132,11 @@ public class EightBallOnClickEvent : MonoBehaviour
                 answerDisplayed = false;
                 eightBall.GetComponent<SpriteRenderer>().enabled = true;
                 eightBallAnswerSprite.GetComponent<SpriteRenderer>().enabled = false;
+                eightBall.GetComponent<Animator>().Play("EightBallIdle");
+                Cont.text = "";
+                eightBall.transform.position = oldPos;
             }
         } 
     }
 
-    public void OnMouseDown()
-    {
-        eightBallDisplaying = true;
-        eightBall.GetComponent<Animator>().Play("EightBallAnim");
-        //Answer.text = "haha";         
-    }
-
-    
 }

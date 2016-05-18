@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TicTacToe : MonoBehaviour {
 
@@ -10,6 +11,7 @@ public class TicTacToe : MonoBehaviour {
     public bool win = false;
     public bool catsGame = false;
     string winner = "";
+    public Button RestartBtn;
 
     void OnDrawGizmos()
     {
@@ -20,6 +22,8 @@ public class TicTacToe : MonoBehaviour {
     void Start()
     {
         whosTurn = "x";
+        RestartBtn.GetComponent<CanvasGroup>().alpha = 0;
+        RestartBtn.GetComponent<Button>().interactable = false;
     }
 
     void Update()
@@ -81,10 +85,14 @@ public class TicTacToe : MonoBehaviour {
         else if (catsGame)
         {
             prompt.text = "Cats Game!";
+            RestartBtn.GetComponent<CanvasGroup>().alpha = 1;
+            RestartBtn.GetComponent<Button>().interactable = true;
         }
         else if (win)
         {
             prompt.text = winner + " Wins!!!";
+            RestartBtn.GetComponent<CanvasGroup>().alpha = 1;
+            RestartBtn.GetComponent<Button>().interactable = true;
         }
     }
 
@@ -150,4 +158,6 @@ public class TicTacToe : MonoBehaviour {
         
         return cats;
     }
+
+    
 }

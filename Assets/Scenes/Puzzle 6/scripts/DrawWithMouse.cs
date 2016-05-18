@@ -20,7 +20,7 @@ public class DrawWithMouse : MonoBehaviour {
     {
         // Create line renderer component and set its property
         line = gameObject.AddComponent<LineRenderer>();
-        line.material = new Material(Shader.Find("Particles/Additive"));
+        line.material = new Material(Shader.Find("GUI/Text Shader"));
         line.SetVertexCount(0);
         line.SetWidth(0.1f, 0.1f);
         line.SetColors(Color.green, Color.green);
@@ -48,7 +48,7 @@ public class DrawWithMouse : MonoBehaviour {
         if (isMousePressed)
         {
             mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            mousePos.z = 0;
+            mousePos.z = -8;
             if (!pointsList.Contains(mousePos))
             {
                 pointsList.Add(mousePos);

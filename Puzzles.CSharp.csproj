@@ -63,9 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scenes\Puzzle 2\CameraGizmo.cs" />
-    <Compile Include="Assets\Scenes\Puzzle 2\TicTacSpawner.cs" />
-    <Compile Include="Assets\Scenes\Puzzle 2\TicTacToe.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 2\Scripts\CameraGizmo.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 2\Scripts\TicTacSpawner.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 2\Scripts\TicTacToe.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 2\Scripts\restartClick.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 3\scripts\DraggingScript.cs" />
     <Compile Include="Assets\Scenes\Puzzle 3\scripts\EightBallOnClickEvent.cs" />
     <Compile Include="Assets\Scenes\Puzzle 3\scripts\MagicEightBallMain.cs" />
     <Compile Include="Assets\Scenes\Puzzle 4\scripts\TwoSecondLight.cs" />
@@ -79,6 +81,9 @@
     <Compile Include="Assets\Scenes\Puzzle 5\scripts\selectButton.cs" />
     <Compile Include="Assets\Scenes\Puzzle 6\scripts\DrawWithMouse.cs" />
     <Compile Include="Assets\Scenes\Puzzle 6\scripts\SnapChat.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 6\scripts\cameraClick.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 6\scripts\penClick.cs" />
+    <Compile Include="Assets\Scenes\Puzzle 6\scripts\textClick.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
