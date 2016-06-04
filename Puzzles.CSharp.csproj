@@ -63,6 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scenes\Final Puzzle\scripts\CamControl.cs" />
+    <Compile Include="Assets\Scenes\Final Puzzle\scripts\PlayerControl.cs" />
+    <Compile Include="Assets\Scenes\Final Puzzle\scripts\Rotator.cs" />
     <Compile Include="Assets\Scenes\Puzzle 2\Scripts\CameraGizmo.cs" />
     <Compile Include="Assets\Scenes\Puzzle 2\Scripts\TicTacSpawner.cs" />
     <Compile Include="Assets\Scenes\Puzzle 2\Scripts\TicTacToe.cs" />
